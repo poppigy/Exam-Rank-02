@@ -165,8 +165,8 @@ t_str	*ft_s(t_str *str, char *s)
 	d = str->width - i;
 	while (d-- > 0)
 		str->arg_len += write(1, " ", 1);
-	if (i == 0)
-		str->arg_len++;
+//	if (i == 0)
+//		str->arg_len++;
 	write(1, s, i);
 	str->arg_len += i;
 	return(str);
@@ -349,10 +349,10 @@ int ft_printf(const char *format, ...)
 //{
 //	int c;
 //
-////	c = ft_printf("str %5.8s\n", "string");
-////	printf("%d\n", c);
-////	c = printf("str %5.8s\n", "string");
-////	printf("%d\n", c);
+//	c = ft_printf("str %5.8s\n", "string");
+//	printf("%d\n", c);
+//	c = printf("str %5.8s\n", "string");
+//	printf("%d\n", c);
 //	c = ft_printf("s0p ~%.0s` ~%.0s` ~%.0s` ~%.0s` ~%.0s`\n", "", "toto", "0123456789", "tjehurthteutuiehteute", NULL);
 //	printf("%d\n", c);
 //	c = printf("s0p ~%.0s` ~%.0s` ~%.0s` ~%.0s` ~%.0s`\n", "", "toto", "0123456789", "tjehurthteutuiehteute", NULL);
